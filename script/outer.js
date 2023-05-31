@@ -1,26 +1,3 @@
-/* 
-
-Input Field: 
-1. income
-2. food
-3. rent
-4. clothes
-5. save
-
-Output Field:
-1. expense
-2. balance
-3. save-amount
-4. remaining-amount
-
-Event handler: 
-1. calculate-button
-2. save-button
-
-*/
-
-/* Now set event handler to the calculate-button*/
-
 document
   .getElementById("calculate-button")
   .addEventListener("click", function () {
