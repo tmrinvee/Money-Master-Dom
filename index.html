@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-2 m-12 ">
+        <div><img src="images/money.png" alt="money"></div>
+        <div class="bg-slate-100 p-12">
+            <div class="mx-auto max-w-lg text-center mb-5">
+                <h1 class="text-2xl font-bold sm:text-3xl">Money Master!</h1>
+            </div>
+            <div>
+                <input id="income" type="number" class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0" 
+                    placeholder="Your Income" />
+                <input type="number" id="food" class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0" 
+                    placeholder="Expense for Food" />
+                <input id="rent" type="number"  class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0"  
+                    placeholder="Expense for Rent" />
+                <input id="clothes" type="number"  class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0"  
+                    placeholder="Expense for Clothes" />
+                <button id="calculate-button" type="submit" 
+                    class="w-full inline-block rounded-lg bg-blue-500 px-5 py-3 text-xl font-medium text-white">
+                    Calculate
+                </button>
+                <div class="grid grid-cols-2 gap-5">
+                    <p class="w-full my-5 rounded-lg border-gray-200 p-4 pr-12 text-md shadow-sm text-white bg-slate-900">Expenses: $
+                        <span id="expense"></span></p>
+                    <p class="w-full my-5 rounded-lg border-gray-200 p-4 pr-12 text-md shadow-sm text-white bg-slate-900">Balance: $
+                        <span id="balance"></span></p>
+                </div>
+               <div class="grid grid-cols-2 gap-5">
+                <input id="save" type="number" class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0"  placeholder="Want to Save Money??" />
+                <button id="save-button" type="submit" class="w-full inline-block rounded-lg  bg-yellow-500 text-xl text-white">
+                    Save
+                </button>
+               </div>
+            <div class="grid grid-cols-2 gap-5">
+                <p class="w-full my-5 rounded-lg border-gray-200 p-4 pr-12 text-md shadow-sm text-white bg-slate-900">
+                    Saving Amount:$
+                    <span id="save-amount">0</span>
+                </p>
+                <p class="w-full my-5 rounded-lg border-gray-200 p-4 pr-12 text-md shadow-sm text-white bg-slate-900">Remaining Balance:$
+                    <span id="remaining-amount">0</span>
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/common.js"></script>
+    <script src="script/money.js"></script>
+</body>
+
+</html>
